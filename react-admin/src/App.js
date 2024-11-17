@@ -17,7 +17,7 @@ import Calendar from './scenes/cal/MyCalendar';
 import FAQ from './scenes/faq';
 import Bar from './scenes/bar';
 // import Line from './scenes/line';
-// import Pie from './scenes/pie';
+import Pie from './scenes/pie';
 // import Gography from './scenes/gography';
 
 
@@ -43,9 +43,9 @@ function App() {
            <Route path="/calendar" element={<Calendar />} />
            <Route path="/faq" element={<FAQ />} />
            <Route path="/bar" element={<Bar />} />
+           <Route path="/pie" element={<Pie />} />
            {/*            
            <Route path="/line" element={<Line />} />
-           <Route path="/pie" element={<Pie />} />           
            <Route path="/gography" element={<Gography />} />*/}
           </Routes>
         </main>
