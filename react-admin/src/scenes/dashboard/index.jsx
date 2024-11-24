@@ -11,7 +11,7 @@ import LineChart from "../../components/LineChart";
 import BarChart from "../../components/BarChart";
 import GeographyChart from "../../components/GeographyChart";
 import StatBox from "../../components/StatBox";
-import ProgressCircel from "../../components/ProgressCircel";
+import ProgressCircle from "../../components/ProgressCircle";
 
 const Dashboard = () => {
   const theme = useTheme();
@@ -22,6 +22,19 @@ const Dashboard = () => {
       <Box display="flex" justifyContent="space-between" alignItem="center">
         <Header title="Dashboard" subtitle="Welcome to your dashboard" />
       </Box>
+    </Box>
+    <Box>
+      <Button
+        sx={{
+          backgroundColor:colors.blueAccent[700],
+          color:colors.grey[100],
+          fontSize: "40px",
+          fontWeight:"bold",
+          padding: "10px 20px",
+        }}
+      >
+        r
+      </Button>
     </Box>
   );
 };
