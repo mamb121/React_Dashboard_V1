@@ -1,7 +1,7 @@
 import { ResponsiveChoropleth } from "@nivo/geo";
 import { tokens } from "../theme";
 import { useTheme } from "@mui/material";
-import { geoFeachers } from "../data/mockGeoFeatures";
+import { geoFeatures } from "../data/mockGeoFeatures";
 import { mockGeographyData as data } from "../data/mockData";
 
 const GeographyChart = ({ isDashboard = false }) => {
@@ -39,7 +39,7 @@ const GeographyChart = ({ isDashboard = false }) => {
           },
         },
       }}
-      features={geoFeachers.features}
+      features={geoFeatures.features}
       margin={{ top: 0, right: 0, bottom: 0, left: 0 }}
       domain={[0, 1000000]}
       unknownColor="#666666"
@@ -82,4 +82,4 @@ const GeographyChart = ({ isDashboard = false }) => {
     />
   );
 };
-export default GeographyChart();
+export default GeographyChart;
