@@ -72,7 +72,7 @@ const MainSidebar = () => {
         <Menu iconShape="square">
           {/* LOGO AND MENU ICON */}
           <MenuItem
-            OnClick={() => setIsCollapsed(!isCollapsed)}
+            onClick={() => setIsCollapsed(!isCollapsed)}
             icon={isCollapsed ? <MenuOutlinedIcon /> : undefined}
             Style={{
               margin: "10px 0 20px 0",
@@ -87,7 +87,7 @@ const MainSidebar = () => {
                 ml="15px"
               >
                 <Typography variant="h3" color={colors.grey[100]}>
-                  ADMINIS
+                  My Dashboard
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
@@ -114,7 +114,7 @@ const MainSidebar = () => {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  Ed Roh
+                  M. Badahman
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
                   VP Fancy Admin
